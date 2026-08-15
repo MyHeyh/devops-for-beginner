@@ -32,12 +32,12 @@ jobs:
         working-directory: client
         run: npm ci
 
-      - name: Lint fronend
+      - name: Lint frontend
         working-directory: client
-        run: npm run lint -- --max-warnings=0
+        run: npm run list -- --max-warnings=0
 
       - name: Build frontend
         run: docker build -t frontend ./client
 
       - name: Build backend
-        run: docker build -t backend ./client
+        run: docker build -t backend ./server
