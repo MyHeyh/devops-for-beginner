@@ -11,7 +11,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const hello = 'sdss';
   // Fetch tasks on component mount
   useEffect(() => {
     fetchTasks();
